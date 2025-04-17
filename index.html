@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Seashore Car Rentals</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        Welcome to Seashore Car Rentals
+    </header>
+
+    <nav>
+        <a href="#" class="section-link" data-section="home">Home</a>
+        <div class="dropdown">
+            <a href="#" id="car-dropdown">Cars</a>
+            <div class="dropdown-menu" id="car-dropdown-menu">
+                <a href="#" class="section-link" data-section="suvs">SUVs</a>
+                <a href="#" class="section-link" data-section="sedans">Sedans</a>
+                <a href="#" class="section-link" data-section="convertibles">Convertibles</a>
+            </div>
+        </div>
+        <a href="#" class="section-link" data-section="rent">Rent</a>
+        <a href="#" class="section-link" data-section="contact">Contact</a>
+        <a href="#" class="section-link" data-section="rental-summary">View All Rentals</a>
+    </nav>
+
+    <section id="home" class="content-section active">
+        <h2>Welcome to our Car Rental Service</h2>
+        <p>Choose from a wide range of vehicles for your travel needs. Easy booking, affordable pricing, and great service await you at Seashore Car Rentals!</p>
+        <p>We offer SUVs, Sedans, and Convertibles at the best prices, tailored for scenic drives along the coast or city explorations.</p>
+    </section>
+
+    <section id="suvs" class="content-section">
+        <h2>SUVs</h2>
+        <ul>
+            <li>Toyota Fortuner - ₹4000/day</li>
+            <li>Hyundai Creta - ₹3500/day</li>
+            <li>Mahindra XUV700 - ₹4200/day</li>
+        </ul>
+    </section>
+
+    <section id="sedans" class="content-section">
+        <h2>Sedans</h2>
+        <ul>
+            <li>Honda City - ₹3000/day</li>
+            <li>Hyundai Verna - ₹2800/day</li>
+            <li>Skoda Slavia - ₹3200/day</li>
+        </ul>
+    </section>
+
+    <section id="convertibles" class="content-section">
+        <h2>Convertibles</h2>
+        <ul>
+            <li>Mini Cooper - ₹5000/day</li>
+            <li>BMW Z4 - ₹7000/day</li>
+            <li>Mercedes C-Class Cabriolet - ₹8000/day</li>
+        </ul>
+    </section>
+
+    <section id="rent" class="content-section">
+        <h2>Book Your Ride</h2>
+        <form id="rentalForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="car">Select Car:</label>
+            <select id="car" name="car" required>
+                <option value="">--Choose a car--</option>
+                <option value="Toyota Fortuner">Toyota Fortuner</option>
+                <option value="Hyundai Creta">Hyundai Creta</option>
+                <option value="Mahindra XUV700">Mahindra XUV700</option>
+                <option value="Honda City">Honda City</option>
+                <option value="Hyundai Verna">Hyundai Verna</option>
+                <option value="Skoda Slavia">Skoda Slavia</option>
+                <option value="Mini Cooper">Mini Cooper</option>
+                <option value="BMW Z4">BMW Z4</option>
+                <option value="Mercedes C-Class Cabriolet">Mercedes C-Class Cabriolet</option>
+            </select>
+
+            <label for="rent-date">Rent Date:</label>
+            <input type="date" id="rent-date" name="rent_date" required>
+
+            <label for="return-date">Return Date:</label>
+            <input type="date" id="return-date" name="return_date" required>
+
+            <button type="submit">Rent Now</button>
+        </form>
+    </section>
+
+    <section id="rental-summary" class="content-section">
+        <h2>Rental Summary</h2>
+        <div id="summary-content">
+            <p>No rentals yet. Book a car to see your rental details here.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section">
+        <h2>Contact Us</h2>
+        <p>Email: support@seashorecarrentals.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: Marina Beach Road, Chennai</p>
+    </section>
+</body>
+</html>
